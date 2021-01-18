@@ -1,26 +1,17 @@
 /*
-Given three ints, a b c, return true if b is greater than a, and c is greater than b. However, with the exception that if "bOk" is true, b does not need to be greater than a.
+Given three ints, a b c, return true if they are in strict increasing order, such as 2 5 11, or 5 6 7, but not 6 5 7 or 5 5 7. However, with the exception that if "equalOk" is true, equality is allowed, such as 5 5 7 or 5 5 5.
 
-inOrder(1, 2, 4, false) → true
-inOrder(1, 2, 1, false) → false
-inOrder(1, 1, 2, true) → true
+inOrderEqual(2, 5, 11, false) → true
+inOrderEqual(5, 7, 6, false) → false
+inOrderEqual(5, 5, 7, true) → true
  */
 package logic1;
 
 public class InOrderEqual {
-    public boolean inOrder(int a, int b, int c, boolean bOk) {
-        if (!bOk && a < b && c > b) {
-            return true;
+    public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+        if (!equalOk) {
+            return a < b && b < c;
         }
-        return bOk && b < c;
-        /*
-         if (!bOk && a < b && c > b) {
-            return true;
-        } else if (bOk && b < c) {
-            return true;
-        } else {
-            return false;
-        }
-         */
+        return a <= b && b <= c;
     }
 }

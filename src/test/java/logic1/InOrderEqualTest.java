@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class InOrderEqualTest {
 
     @Test
-    void inOrder() {
-        int a = 1;
-        int b = 1;
-        int c = 2;
-        boolean bOk = true;
+    void inOrderEqual() {
+        int a = 5;
+        int b = 5;
+        int c = 7;
+        boolean equalOk = true;
 
-        assertTrue(new InOrderEqual().inOrder(a, b, c, bOk));
+        assertTrue(new InOrderEqual().inOrderEqual(a, b, c, equalOk));
     }
 }
