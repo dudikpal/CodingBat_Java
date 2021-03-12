@@ -11,3 +11,11 @@ public class FrontBack {
         return new StringBuilder().append(str).replace(0, 1, endChar).replace(length - 1, length, startChar).toString();
     }
 }
+
+/*
+Given a string, return a new string where the first and last chars have been exchanged.
+
+frontBack("code") → "eodc"
+frontBack("a") → "a"
+frontBack("ab") → "ba"
+ */
