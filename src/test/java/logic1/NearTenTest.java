@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NearTeenTest {
+class NearTenTest {
 
     @Test
     void nearTen() {
         int num = 18;
 
-        assertTrue(new NearTeen().nearTen(num));
+        assertTrue(new NearTen().nearTen(num));
     }
 }
