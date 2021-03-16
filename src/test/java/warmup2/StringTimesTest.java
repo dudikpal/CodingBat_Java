@@ -1,6 +1,7 @@
 package warmup2;
 
 import org.junit.jupiter.api.Test;
+import warmup2.stringtimes.StringTimes;
 
 import static org.junit.jupiter.api.Assertions.*;
 

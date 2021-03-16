@@ -1,4 +1,4 @@
-package warmup2;
+package warmup2.stringtimes;
 
 public class StringTimes {
     
