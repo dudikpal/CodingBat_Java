@@ -10,17 +10,18 @@ public class Pairs {
 
     public Map<String, String> pairs(String[] strings) {
 
-        Map<String, String> result = new HashMap<>();
-        /*return Arrays.stream(strings)
-                .map(str -> List.of(str.substring(0, 1), str.substring(str.length() - 2)))
+        //Map<String, String> result = new HashMap<>();
+        return Arrays.stream(strings)
+                .map(str -> List.of(str.substring(0, 1), str.substring(str.length() - 1)))
                 .collect(Collectors.toMap(
                         str -> str.get(0),
-                        str -> str.get(1)
-                ));*/
-        for (String word : strings) {
-            result.put(word.substring(0, 1), word.substring(word.length() - 1));
-        }
-        return result;
+                        str -> str.get(1),
+                        (s1, s2) -> s2
+                ));
+//        for (String word : strings) {
+//            result.put(word.substring(0, 1), word.substring(word.length() - 1));
+//        }
+//        return result;
     }
 
 }
