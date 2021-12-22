@@ -21,7 +21,10 @@ class CountYZTest {
         return Stream.of(
                 Arguments.arguments("fez day", 2),
                 Arguments.arguments("day fez", 2),
-                Arguments.arguments("day fyyyz", 2)
+                Arguments.arguments("day fyyyz", 2),
+                Arguments.arguments("DAY abc XYZ", 2),
+                Arguments.arguments("y2bz", 2),
+                Arguments.arguments("day:yak", 1)
         );
     }
 
